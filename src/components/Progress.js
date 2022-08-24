@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import { Progress } from 'antd';
 import { useSelector } from 'react-redux';
 import "../styles/progress.scss"
@@ -19,4 +19,4 @@ const ProgressBar = () => {
     )
 }
 
-export default ProgressBar;
+export default memo(ProgressBar);

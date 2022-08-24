@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import { Button, Popconfirm, Dropdown, Menu, Tag } from 'antd'
 import { EditOutlined, DeleteOutlined, CheckCircleOutlined, SyncOutlined, ClockCircleOutlined, MenuOutlined } from '@ant-design/icons';
 import "../styles/toDoCard.scss"
@@ -103,4 +103,4 @@ const Card = ({ title, data, editFormModal, handleDelete, handleStatusChange }) 
     )
 }
 
-export default Card
+export default memo(Card);

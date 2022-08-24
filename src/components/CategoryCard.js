@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, memo } from 'react'
 import { Badge, Button } from 'antd';
 import { TagOutlined } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
@@ -46,4 +46,4 @@ const CategoryCard = ({ categories }) => {
     )
 }
 
-export default CategoryCard;
+export default memo(CategoryCard);

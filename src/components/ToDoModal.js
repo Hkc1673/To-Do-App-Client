@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from 'react'
+import React, { useCallback, useState, useEffect, memo } from 'react'
 import { Modal, Form, Input, Button, notification} from 'antd'
 import { createToDo, updateToDo } from '../store/slice/toDoSlice'
 import { useDispatch } from 'react-redux'
@@ -127,4 +127,4 @@ const ToDoModal = ({ modalVisible, handleModalVisible, selectedToDo }) => {
     )
 }
 
-export default ToDoModal
+export default memo(ToDoModal);
