@@ -1,0 +1,110 @@
+.toDoCard {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-left: 10px;
+
+    .toDoCard-list {
+        width: 30%;
+        background-color: #F5F9F9;
+        border-radius: 10px;
+        padding: 20px;
+        min-height: 100%;
+
+        .toDoCard-list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            :first-child {
+                font-size: 22px;
+                color: #52AB9A;
+                font-weight: bolder;
+            }
+
+            .toDoCard-list-item-count {
+                background-color: #E9F1F0;
+                border-radius: 5px;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                color: #52AB9A;
+            }
+        }
+
+        .toDoCard-list-box {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #E9F1F0;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+            p {
+                font-size: 14px;
+            }
+
+            .toDoCard-list-box-footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .toDoCard-list-action {
+                    display: flex;
+                    align-items: center;
+
+                    button {
+                        margin: 0;
+                        padding: 5px;
+                    }
+                }
+
+                .toDoCard-list-edit-icon {
+                    color: gray;
+                    font-size: 18px;
+                    font-weight: bolder;
+                }
+
+                .toDoCard-list-delete-icon {
+                    color: #FF4F50;
+                    font-size: 18px;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+    .toDoCard-list-button {
+        position: fixed;
+        bottom: 40px;
+        right: 60px;
+        background-color: #E9F1F0;
+        border-radius: 10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        text-align: center;
+        margin-top: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+
+        .toDoCard-list-button-icon {
+            color: #52AB9A;
+            font-size: 28px;
+            font-weight: bolder;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .toDoCard-list-box {
+        padding: 0;
+    }
+
+    .toDoCard-list-box-footer {
+        flex-direction: column;
+    }
+}

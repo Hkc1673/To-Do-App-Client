@@ -1,0 +1,75 @@
+.todo-modal {
+  .ant-modal-content {
+    .ant-modal-body {
+      padding: 24px;
+
+      .todo-container {
+
+        .todo-form {
+
+          .ant-form-item {
+            .ant-form-item-label {
+              width: 137px;
+
+              label {
+                font-size: 14px;
+              }
+            }
+
+            .ant-form-item-control {
+              .ant-form-item-control-input {
+                .ant-form-item-control-input-content {
+                  input {
+                    font-size: 14px;
+                  }
+
+                  .ant-select {
+                    font-size: 14px;
+                    width: 287px;
+
+                    .ant-select-selector {
+                      padding: 1px 10px !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .footer-form-item {
+            margin-bottom: 0;
+
+            .ant-form-item-control {
+              .ant-form-item-control-input {
+                .ant-form-item-control-input-content {
+                  display: flex;
+                  justify-content: flex-end;
+                }
+              }
+            }
+          }
+
+          .submit-btn {
+            background-color: #699a00;
+            color: #fff;
+            width: 106px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            line-height: 12px;
+            border-radius: 4px;
+            outline: 0;
+            box-shadow: none;
+            border: none;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+}
