@@ -6,9 +6,9 @@ import "../styles/progress.scss"
 const ProgressBar = () => {
     const { selectedCategory } = useSelector(state => state.toDo)
 
-    const completed = Math.round(selectedCategory.filter(todo => todo.status === "done").length / selectedCategory.length * 100)
-    const inProgress = Math.round(selectedCategory.filter(todo => todo.status === "in progress").length / selectedCategory.length * 100)
-    const toDo = Math.round(selectedCategory.filter(todo => todo.status === "to do").length / selectedCategory.length * 100)
+    const completed = Math.round(selectedCategory?.filter(todo => todo.status === "done").length / selectedCategory.length * 100)
+    const inProgress = Math.round(selectedCategory?.filter(todo => todo.status === "in progress").length / selectedCategory.length * 100)
+    const toDo = Math.round(selectedCategory?.filter(todo => todo.status === "to do").length / selectedCategory.length * 100)
 
     return (
         <div className='progress-bar'>

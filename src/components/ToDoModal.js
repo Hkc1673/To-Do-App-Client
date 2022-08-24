@@ -123,10 +123,7 @@ const ToDoModal = ({ modalVisible, handleModalVisible, selectedToDo }) => {
 
                 </Form>
             </div>
-
-
         </Modal>
-
     )
 }
 

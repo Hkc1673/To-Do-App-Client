@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { ToDoCard, CategoryCard } from './components';
 import { useDispatch, useSelector } from 'react-redux';
 import { getToDoList } from "./store/slice/toDoSlice"
@@ -11,7 +11,6 @@ const App = () => {
   const { isLoading, toDos } = useSelector(state => state.toDo);
 
   useEffect(() => {
-    console.log("gettodo")
     dispatch(getToDoList())
   }, [])
 

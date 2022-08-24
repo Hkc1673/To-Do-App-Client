@@ -26,7 +26,7 @@ const Card = ({ title, data, editFormModal, handleDelete, handleStatusChange }) 
     const menu = (item) => (
         <Menu>
             {
-                statusList.map((status, index) => {
+                statusList.filter(status => status.key !== item.status).map((status, index) => {
                     return (
                         <Menu.Item key={index}>
                             <Button
@@ -50,7 +50,7 @@ const Card = ({ title, data, editFormModal, handleDelete, handleStatusChange }) 
                 <span className='toDoCard-list-item-count'>{data?.length}</span>
             </div>
             {
-                data.map((item, index) => {
+                data?.map((item, index) => {
                     return (
                         <div className='toDoCard-list-box' key={index}>
                             <p>{item?.title}</p>
