@@ -28,7 +28,7 @@ const ToDoModal = ({ modalVisible, handleModalVisible, selectedToDo }) => {
 
     const onFinish = useCallback(
         async (values) => {
-            if (values) {
+            if (values && values.category !== "All") {
                 const body = {
                     title: values?.title,
                     category: values?.category,
@@ -49,7 +49,7 @@ const ToDoModal = ({ modalVisible, handleModalVisible, selectedToDo }) => {
             } else {
                 notification.error({
                     message: 'Error',
-                    description: `Please enter the required fields !!`
+                    description: `Please enter the required fields and don't use All category`,
                 });
             }
         },

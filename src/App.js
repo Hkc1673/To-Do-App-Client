@@ -19,7 +19,7 @@ const App = () => {
     categories["All"] = todos;
     todos?.forEach(todo => {
       if (categories[todo.category]) {
-        categories[todo.category].push(todo);
+        categories[todo.category]?.push(todo);
       } else {
         categories[todo.category] = [todo];
       }
